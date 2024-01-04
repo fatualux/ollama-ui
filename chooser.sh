@@ -2,7 +2,7 @@
 # This script depends on bash python3 fzf ollama ollama-ui
 
 check_dependencies() {
-  local dependencies=("bash" "python3" "fzf" "ollama" "ollama-ui")
+  local dependencies=("bash" "python3" "fzf" "ollama")
   local missing=()
 
   for dep in "${dependencies[@]}"; do
