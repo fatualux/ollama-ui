@@ -45,3 +45,9 @@ If any of these are not satisfied, the script will fail.
 ```
 sh choose.sh
 ```
+
+## License
+
+This project is licensed under the MIT License.
+
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
