@@ -1,9 +1,18 @@
-# ollama-ui
+### Overview
 
 Just a simple HTML UI for Ollama
 
 Now available as a chrome extension!
 https://chrome.google.com/webstore/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfcehffco
+
+[![Watch the video](media/demo.png)](media/demo.mp4/)
+
+## Dependencies
+
+- [Bash](https://www.gnu.org/software/bash/)
+- [Python](https://www.python.org/)
+- [fzf](https://github.com/junegunn/fzf)
+- [Ollama](https://github.com/jmorganca/ollama)
 
 ## Usage
 
