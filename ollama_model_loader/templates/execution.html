@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your head content -->
+</head>
+<body>
+    <h1>Ollama GUI</h1>
+
+    <div id="execution-container">
+        <h3>Model Execution</h3>
+        <p>Model execution in progress...</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        $(document).ready(function () {
+            var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+            // Listen for model execution started message and update the execution container
+            socket.on('model_execution_started', function (msg) {
+                $('#execution-container').html('<h3>Model Execution</h3><p>' + msg.message + '</p>');
+            });
+        });
+    </script>
+    <div class="container mt-5">
+        <pre>{{ result }}</pre>
+        <a href="{{ url_for('index') }}" class="btn btn-primary mt-3">Back to Home</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

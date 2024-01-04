@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your head content -->
+</head>
+<body>
+    <h1>Ollama GUI</h1>
+
+    <div class="table-responsive">
+        <!-- Your models table here -->
+    </div>
+
+    <div id="chat-container">
+        <h3>Chat with Model</h3>
+        <form id="chat-form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="user-input" placeholder="Type your message...">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="sendMessage()">Send</button>
+        </form>
+        <div id="chat-output"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        $(document).ready(function () {
+            var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+            // Listen for model messages and append them to the chat output
+            socket.on('model_message', function (msg) {
+                $('#chat-output').append('<p>' + msg.message + '</p>');
+            });
+        });
+
+        function sendMessage() {
+            var userInput = $('#user-input').val();
+            if (userInput.trim() !== '') {
+                // Append user message to the chat output
+                $('#chat-output').append('<p>User: ' + userInput + '</p>');
+
+                // Send the user message to the server
+                $.post('/chat_with_model', { message: userInput });
+
+                // Clear the input field
+                $('#user-input').val('');
+            }
+        }
+    </script>
+</body>
+</html>
+
