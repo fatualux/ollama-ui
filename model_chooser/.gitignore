@@ -1,12 +1,12 @@
 # created by virtualenv automatically
 bin/
-bin/*
-lib
-lib/*
-*.py
+bin-*/
+lib/
+lib-*/
 *.pyc
 *.pyo
 *.pyd
-*.so
 *.egg-info
-*.egg-info/*
+*.egg
+*.cfg
+*.log
