@@ -5,17 +5,10 @@ Just a simple HTML UI for Ollama
 Now available as a chrome extension!
 https://chrome.google.com/webstore/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfcehffco
 
-<p align="center">
- <table border="0">
-  <tr>
-   <td>
-    <img src="./media/pre.gif" />
-   </td>
-   <td>
-    <img src="./media/req.gif" />
-   </td>
-  </tr>
-</p>
+<div align="center">
+  <p><img src="./media/pre.gif" /></p>
+  <p><img src="./media/req.gif" /></p>
+</div>
 
 ### Screenshots
 
