@@ -5,7 +5,8 @@ Just a simple HTML UI for Ollama
 Now available as a chrome extension!
 https://chrome.google.com/webstore/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfcehffco
 
-![./media/mix.gif](./media/mix.mp4/)
+![](./media/mix.gif)
+![./media/screencast.png](./media/mix.mp4)
 
 ### Screenshots
 
