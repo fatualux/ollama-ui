@@ -5,8 +5,11 @@ Just a simple HTML UI for Ollama
 Now available as a chrome extension!
 https://chrome.google.com/webstore/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfcehffco
 
-![](./media/mix.gif)
-![./media/screencast.png](./media/mix.mp4)
+<p align="center">
+  <img src="./media/mix.gif" />
+</p>
+
+[![Watch the video](./media/screencast.png)](./media/mix.mp4/)
 
 ### Screenshots
 
@@ -14,7 +17,6 @@ https://chrome.google.com/webstore/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfceh
 ![Loader UI](./media/loader.png)
 ![Chati UI](./media/chat.png)
 
-[![Watch the video](media/demo.png)](media/demo.mp4/)
 
 ## Dependencies
 
