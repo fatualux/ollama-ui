@@ -6,8 +6,8 @@ Now available as a chrome extension!
 https://chrome.google.com/webstore/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfcehffco
 
 <div align="center">
-  <p><img src="./media/pre.gif" /></p>
-  <p><img src="./media/req.gif" /></p>
+  <p><img src="./media/pre.gif" /></p><br>
+  <p><img src="./media/req.gif" /></p><br>
 </div>
 
 ### Screenshots
