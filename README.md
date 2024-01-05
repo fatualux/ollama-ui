@@ -39,7 +39,7 @@ make
 
 ### Serve
 
-The script is used to run the command `ollama serve` and run the chat in a web server.
+The script is used to run the command `ollama serve` and serve the chat in a web server.
 
 ```
 sh serve.sh
