@@ -6,10 +6,9 @@ Now available as a chrome extension!
 https://chrome.google.com/webstore/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfcehffco
 
 <p align="center">
-  <img src="./media/mix.gif" />
+  <img src="./media/pre.gif" />
+  <img src="./media/req.png" />
 </p>
-
-[![Watch the video](./media/screencast.png)](./media/mix.mp4/)
 
 ### Screenshots
 
